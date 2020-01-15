@@ -1,7 +1,26 @@
-# Content: Unsupervised Learning
-## Project: Creating Customer Segments
+# Machine Learning - Customer Segments (Unsupervised Learning)
 
-### Install
+## Table of Contents
+- [Overview](#Overview)
+- [Dependencies](#Dependencies)
+- [Code](#Code)
+- [Running the code](#Running-the-code)
+- [Data](#Data)
+
+## Overview
+In following project, customers are clustered based on their spending amount of diverse product categories. Main goal is to describe the variation in the different types of customers that a wholesale distributor interacts with. For clustering algorithm, Gaussian Mixture Model is chosen. Through following project, I have explored unsupervised learning algorithm utilized on a real-world dataset.
+
+Project proceeds as follow:
+
+- Data Exploration
+- Data Preprocssing
+- Feature Transformation
+- Visualizing a Biplot
+- Clustering
+- Conclusion
+
+
+## Dependencies
 
 This project requires **Python 2.7** and the following Python libraries installed:
 
@@ -12,13 +31,13 @@ This project requires **Python 2.7** and the following Python libraries installe
 
 You will also need to have software installed to run and execute a [Jupyter Notebook](http://ipython.org/notebook.html)
 
-If you do not have Python installed yet, it is highly recommended that you install the [Anaconda](http://continuum.io/downloads) distribution of Python, which already has the above packages and more included. Make sure that you select the Python 2.7 installer and not the Python 3.x installer. 
+If you do not have Python installed yet, it is highly recommended that you install the [Anaconda](http://continuum.io/downloads) distribution of Python, which already has the above packages and more included. Make sure that you select the Python 2.7 installer and not the Python 3.x installer.
 
-### Code
+## Code
 
 Template code is provided in the `customer_segments.ipynb` notebook file. You will also be required to use the included `visuals.py` Python file and the `customers.csv` dataset file to complete your work. While some code has already been implemented to get you started, you will need to implement additional functionality when requested to successfully complete the project. Note that the code included in `visuals.py` is meant to be used out-of-the-box and not intended for students to manipulate. If you are interested in how the visualizations are created in the notebook, please feel free to explore this Python file.
 
-### Run
+## Running the Code
 
 In a terminal or command window, navigate to the top-level project directory `customer_segments/` (that contains this README) and run one of the following commands:
 
@@ -39,11 +58,11 @@ The customer segments data is included as a selection of 440 data points collect
 Note (m.u.) is shorthand for *monetary units*.
 
 **Features**
-1) `Fresh`: annual spending (m.u.) on fresh products (Continuous); 
-2) `Milk`: annual spending (m.u.) on milk products (Continuous); 
-3) `Grocery`: annual spending (m.u.) on grocery products (Continuous); 
+1) `Fresh`: annual spending (m.u.) on fresh products (Continuous);
+2) `Milk`: annual spending (m.u.) on milk products (Continuous);
+3) `Grocery`: annual spending (m.u.) on grocery products (Continuous);
 4) `Frozen`: annual spending (m.u.) on frozen products (Continuous);
 5) `Detergents_Paper`: annual spending (m.u.) on detergents and paper products (Continuous);
-6) `Delicatessen`: annual spending (m.u.) on and delicatessen products (Continuous); 
+6) `Delicatessen`: annual spending (m.u.) on and delicatessen products (Continuous);
 7) `Channel`: {Hotel/Restaurant/Cafe - 1, Retail - 2} (Nominal)
-8) `Region`: {Lisbon - 1, Oporto - 2, or Other - 3} (Nominal) 
+8) `Region`: {Lisbon - 1, Oporto - 2, or Other - 3} (Nominal)
